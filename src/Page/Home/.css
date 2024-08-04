@@ -1,0 +1,342 @@
+/* App.css */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .autoimg{
+    padding-top:17px;
+  }
+.foryou{
+    text-align: center;
+    margin: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+.foryou p{
+  font-size:16px; 
+  color: #8b8888; 
+  font-weight: 100;
+  padding-top: 10px;
+    
+    
+}
+.contact-icons {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-icons a {
+  font-weight: 800;
+  font-size: 40px;
+  color: #25D366; /* WhatsApp color */
+  
+  text-decoration: none;
+}
+.contact-icons a.call-icon {
+  color: #34B7F1; /* Call color */
+}
+.product{
+    display: flex;
+    justify-content: center;
+}
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #27299e;
+    margin: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .plan{
+    background-color: #d72222;
+    color: #fff;
+    align-items: center;
+    border-radius: 8px 8px 0px 0px;
+    padding: 15px;
+  }
+  .speed{
+    font-weight:500;
+    font-size:22px; 
+    padding: 10px;
+    color: #ffffff;  
+    background-color: #27299e;
+  }
+  .monthly{
+    font-weight: 400;
+    font-size:15px; 
+    background-color: #eae8e8;
+    padding: 6px;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 42px;
+  }
+  .line{
+    width:90%;
+    color:#b31c1c;
+    background-color: #a41111;
+    opacity: 0.5;
+  }
+
+
+
+/* Feature container */
+.feature {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.feature:hover {
+  background-color: #f0f0f0;
+}
+
+/* Icon styling */
+.feature .icon {
+  margin-right: 10px;
+  color: #3e4955; /* Primary color */
+}
+
+.feature .icon i {
+  
+  font-size: 34px; /* Adjust the size of the icon */
+}
+
+/* Text styling */
+.feature .use {
+  font-weight: bold;
+  font-size: 17px;
+  align-items: center;
+}
+
+.available{
+  font-weight: 600;
+  font-size:15px; 
+  padding: 5px;
+  margin-bottom: 3px;
+}
+.charge p{
+  margin: 0;
+}
+.charge{
+  font-weight: 400;
+  font-size:15px; 
+  padding: 5px;
+  background-color: #d72222;
+  color: #ffffff;
+  margin-bottom: 8px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+  
+  .product-card button {
+    margin: 8px;
+    padding: 10px 20px;
+    background-color: #27299e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card button:hover {
+    background-color: #005801;
+  }
+  @media (max-width: 1050px){
+    .product-card{
+      max-width: 300;
+      justify-content: space-around;
+    }
+    .plan{
+      padding: 5px;
+    }
+    .speed{
+      padding: 5px;
+    }
+    .monthly{
+      padding: 3px;
+    }
+    .price{
+      font-size: 32px;
+    }
+    .feature{
+    padding: 10px 15px;
+    }
+    .feature .icon i {
+  
+      font-size: 24px; /* Adjust the size of the icon */
+    }
+    .available{
+      font-weight: 600;
+      font-size:13px; 
+      padding: 2px;
+      margin-bottom: 2px;
+    }
+    .charge{
+      font-size:12px; 
+      padding: 2px;
+    }
+    .reviews{      
+      margin: 50px;  
+    }
+    .rating{
+      justify-content: space-between;
+    }
+   
+    
+  }
+  @media (max-width: 750px) {
+    .product{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .product-card {
+     max-width: 100%;
+      width: 400px;
+    }
+  
+   
+  
+  }
+  @media (max-width: 500px) {
+    .product-card {
+      max-width: 100%;
+       width: 300px;
+     }
+     .foryou{
+      font-size: small;
+     }
+     .foryou p {
+      font-size: 15px;
+     }
+     .reviews{      
+      margin: 10px;  
+      background-color: #ececec;
+      border-radius: 8px;
+    }
+    .rating{
+     flex-direction: column;
+     padding: 0px;
+    }
+  }
+  @media (max-width: 330px) {
+    .product-card {
+      max-width: 100%;
+       width: 250px;
+     }
+     .foryou{
+      font-size: 12px;
+     }
+     .foryou p {
+      font-size: 14px;
+     }
+     .review-section h1 {
+      font-size: 25px;
+     }
+  }
+  
+  .skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0,0.15),
+                -6px -6px 10px -1px rgba(225, 225, 225,0.7)
+  }
+
+  .inner {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0,0.2),
+                inset -4px -4px 6px -1px rgba(225, 225, 225, 0.7),
+                -0.5px -0.5px 0px rgba(225, 225, 225, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+
+  circle{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width:20px ;
+    stroke-dasharray: 472;
+    stroke-dashoffset: var(--leftPercent);
+    
+    transition: stroke-dashoffset 4s;
+  }
+  svg{
+    position: absolute;
+    top:0;
+    left: 0;
+    --leftPercent:472;
+  }
+  
+  .rating-label {
+    margin-top: 10px;
+    text-align: center;
+
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  
+  
+ 
+  .review-section{
+    
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+  }
+  .static{
+    text-align: center;
+    
+    
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .static p{
+    
+    font-size:16px; 
+    color: #8b8888; 
+    font-weight: 100;
+    padding-top: 10px;
+  }
+
+  .rating{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews{
+    padding: 40px;
+  }
+  
+  
+  

@@ -1,0 +1,133 @@
+.footerpage{
+  background-color: #2d3648 !important;
+  color: #ffffff;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footerinfo{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.company{
+  align-items: start;
+  padding-top: 40px;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+.footer-section p, li{
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 6px;
+}
+
+.footer-bottom .line{
+width: 90%;
+position: relative;
+left: 5%;
+}
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: start;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff0099; /* Adjust hover color as needed */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #cccccc;
+  padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-bottom p {
+  padding-top: 20px;
+}
+
+@media (max-width:1025px) {
+  .footer{
+    flex-direction: column;
+  }
+  .company{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width:648px) {
+   .footerinfo{
+    flex-wrap: wrap;
+   }
+   .footer-section{
+    width: 50%;
+   }
+}
+@media (max-width:370px) {
+  .footer-section{
+    width: 100%;
+    text-align: center;
+   }
+   .footer{
+    text-align: center;
+   }
+   .footerinfo{
+    width: 100%;
+    text-align: center;
+   }
+   .footer-section p,.footer-section span,
+   .footer-section ul  , .footer-section div {
+  align-items: center ;
+}
+.social-icons{
+  justify-content: center;
+}
+
+
+}
+

@@ -1,0 +1,104 @@
+/* App.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header img {
+    max-height: 70px; /* Adjust the height as necessary */
+    width: auto;
+    border-radius: 70%; /* Optional: makes the image circular */
+  }
+  .header{
+     font-weight: 600;
+     
+  }
+  
+
+  
+  .option {
+    text-align: center;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+  }
+  
+  .menu-icon i {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .drawer-menu {
+    display: flex;
+    position: static;
+    background-color: #ffffff;
+  }
+  
+  .drawer-menu a {
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333;
+    
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .drawer-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  .phone{
+    padding: 10px 20px;
+    color: #ffffff !important;
+    background: #27299e;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  .phone:hover {
+    background-color: #ececec;
+    color: #27299e !important;
+  }
+  @media (max-width: 700px) {
+    .menu-icon {
+     
+    }
+  
+    .drawer-menu {
+      display: flex;
+      position: absolute;
+      top: 55px;
+      right: 10px;
+      border-radius: 8px;
+      z-index: 1000;
+      flex-direction: column;
+      box-shadow: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+  
+    .drawer-menu a {
+      padding: 10px 15px;
+    }
+  
+    .drawer-menu a:hover {
+      background-color: transparent;
+      color: #007bff;
+    }
+  }
+  @media (max-width: 500px) {
+  .header img {
+    max-height: 50px; /* Adjust the height as necessary */
+    width: auto;
+    border-radius: 70%; /* Optional: makes the image circular */
+  }
+  .phone{
+   
+  }
+}
